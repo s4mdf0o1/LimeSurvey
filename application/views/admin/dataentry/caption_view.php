@@ -40,11 +40,13 @@
                 {
                     if (me.value != '')
                     {
-                        document.getElementById('submitdata').disabled = false;
+                        //document.getElementById('submitdata').disabled = false;
+                        $('#submitdata').button("option", "disabled", false);
                     }
                     else
                     {
-                        document.getElementById('submitdata').disabled = true;
+                        //document.getElementById('submitdata').disabled = true;
+                        $('#submitdata').button("option", "disabled", true);
                     }
                 }
                 //--></script>
